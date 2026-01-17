@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Manrope:wght@200..800&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+:root {
+  /* Fonts */
+  --font-primary: "DM Serif Display", serif;
+  --font-secondary: "DM Serif Text", serif;
+  --font-text: "Manrope", sans-serif;
+
+  /* =========================
+     Fondos principales
+     ========================= */
+  --background-color: #faf9f7; /* Fondo general crema muy claro */
+  --background-secondary: #ffffff; /* Cards, navbar, secciones limpias */
+  --background-muted: #f2f1ee; /* Fondos suaves alternos */
+
+  /* =========================
+     Títulos
+     ========================= */
+  --title-h1-color: #1f2937; /* Azul grisáceo oscuro (hero title) */
+  --title-h2-color: #2c3550; /* Azul profundo elegante */
+  --title-h3-color: #4b5563; /* Gris azulado */
+
+  /* =========================
+     Texto general
+     ========================= */
+  --color-text: #6b7280; /* Texto principal */
+  --color-text-muted: #9ca3af; /* Texto secundario */
+  --color-text-inverse: #ffffff; /* Texto sobre fondos oscuros */
+
+  /* =========================
+     Navbar
+     ========================= */
+  --navbar-background: #ffffffcc; /* Blanco translúcido */
+  --navbar-border: #e5e7eb;
+  --navbar-text: #1f2937;
+  --navbar-hover: #4f5d8c; /* Azul suave */
+  --navbar-active: #2c3550;
+  --navbar-mobile-background: #eef3f0;
+
+  
+
+  /* =========================
+     Botones primarios
+     ========================= */
+  --button-primary-bg: #5b63a6; /* Azul lavanda */
+  --button-primary-hover: #4f5d8c;
+  --button-primary-text: #ffffff;
+
+  /* =========================
+     Botones secundarios
+     ========================= */
+  --button-secondary-bg: transparent;
+  --button-secondary-border: #5b63a6;
+  --button-secondary-text: #5b63a6;
+  --button-secondary-hover-bg: #eef0fb;
+
+  /* =========================
+     Cards
+     ========================= */
+  --card-background: #ffffff;
+  --card-border: #e5e7eb;
+  --card-title: #1f2937;
+  --card-text: #6b7280;
+  --card-shadow: rgba(17, 24, 39, 0.06);
+
+  /* =========================
+     Badges / Pills
+     ========================= */
+  --badge-background: #eef0fb;
+  --badge-text: #5b63a6;
+
+  /* =========================
+     Acentos
+     ========================= */
+  --accent-blue: #5b63a6;
+  --accent-green: #5f7c6a; /* Verde natural del bloque Don Frank */
+  --accent-cream: #f5f3ef;
+
+  /* =========================
+     Estados y UI
+     ========================= */
+  --focus-ring: #5b63a680;
+  --divider-color: #e5e7eb;
+
+  /* =========================
+     Footer
+     ========================= */
+  --footer-background: #ffffff;
+  --footer-text: #6b7280;
+  --footer-title: #1f2937;
+
+  /* sizes */
+  --size-xx: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--background-color);
+}

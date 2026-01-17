@@ -1,0 +1,73 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--navbar-mobile-background);
+    z-index: 9;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.mobile-nav__logo {
+    width: var(--size-10xl);
+    height:var(--size-10xl);
+    object-fit: cover;
+
+}
+
+.mobile-nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mobile-nav__list-item {
+    list-style-type: none;
+}
+
+.mobile-nav__list-item a{
+    font-size: var(--size-lg);
+    text-decoration: none;
+    color: var(--navbar-text);
+    
+}
+
+.mobile-nav__separator {
+    border: 1px solid var(--accent-blue);
+    padding-right: 1.5rem;
+}
+
+.mobile-nav__comprar-btn {
+    font-family: var(--font-primary);
+    text-decoration: none;
+    background-color: var(--button-primary-bg);
+    color: var(--button-primary-text);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    font-size: var(--size-sm);
+}
+
+.mobile-nav__comprar-btn__bolsa {
+    width: 1em;
+    display: inline;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+}
+
+.mobile-nav__close-btn {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    font-family: var(--font-text);
+    color: var(--accent-green);
+    font-size: var(--size-sm);
+    text-transform: uppercase;
+}

@@ -1,0 +1,58 @@
+.container {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 0.5rem;
+}
+
+.primary-btn {
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+/*XS*/
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+/*SM*/
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+/*MD*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+}
+
+/*LG*/
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .section {
+    margin-top: 10rem;
+}
+
+}
+
+/*XL*/
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+/*2XL*/
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
