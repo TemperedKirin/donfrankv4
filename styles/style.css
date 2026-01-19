@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Manrope:wght@200..800&display=swap");
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    line-height: calc(1em + 0.5rem);
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
 }
 
 :root {
@@ -28,7 +28,7 @@
   /* =========================
      Títulos
      ========================= */
-  --title-h1-color: #1f2937; /* Azul grisáceo oscuro (hero title) */
+  --title-h1-color: #f5f3ef; /* Azul grisáceo oscuro (hero title) */
   --title-h2-color: #2c3550; /* Azul profundo elegante */
   --title-h3-color: #4b5563; /* Gris azulado */
 
@@ -38,6 +38,7 @@
   --color-text: #6b7280; /* Texto principal */
   --color-text-muted: #9ca3af; /* Texto secundario */
   --color-text-inverse: #ffffff; /* Texto sobre fondos oscuros */
+  
 
   /* =========================
      Navbar
@@ -49,7 +50,12 @@
   --navbar-active: #2c3550;
   --navbar-mobile-background: #eef3f0;
 
-  
+  /* =========================
+     Hero
+     ========================= */
+  --hero-link-color: #e1c08a;
+  --color-hero-text: #e7e2d8;
+  --hero-highlight-color: #9fb28c;
 
   /* =========================
      Botones primarios
@@ -120,7 +126,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 img,
@@ -128,23 +134,32 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
-input, button,
+input,
+button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 button {
-    border: none;
-    background: none;
-    color: inherit;
-    cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 body {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-family: var(--font-primary);
+}
+
+a {
+  text-decoration: none;
 }

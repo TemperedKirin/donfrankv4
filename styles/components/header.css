@@ -15,8 +15,8 @@
 }
 
 .header__logo {
-    width: var(--size-8xl);
-    height:var(--size-8xl);
+    width: var(--size-6xl);
+    height:var(--size-6xl);
     object-fit: cover;
 }
 
@@ -74,6 +74,7 @@
     color: var(--navbar-text);
     transition: all 0.3s ease-in-out;
     display: inline-block;
+    font-family: var(--font-text);
     
    }
 
@@ -128,6 +129,7 @@
     .header__title {
         font-family: var(--font-secondary);
         font-size: var(--size-xl);
+        color: var(--title-h3-color);
         font-weight: 700;
         text-transform: uppercase;
         display: block;

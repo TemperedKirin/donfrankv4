@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="./styles/modern-normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/components/header.css" />
-    <link rel="stylesheet" href="./styles/components/mobile-nav.css">
+    <link rel="stylesheet" href="./styles/components/mobile-nav.css" />
+    <link rel="stylesheet" href="./styles/components/hero.css" />
+
     <link rel="stylesheet" href="./styles/utils.css" />
     <title>Don Frank</title>
   </head>
@@ -15,10 +17,10 @@
       <div class="header__title-container">
         <img
           class="header__logo"
-          src="./img/donfranksinfondo.png"
+          src="./img/donfranksinfondo_recortado_solo.png"
           alt="Don Frank logo"
-          width="503"
-          height="496"
+          width="160"
+          height="112"
         />
         <span class="header__title">Don Frank Café</span>
       </div>
@@ -66,41 +68,54 @@
       </nav>
     </header>
     <!-- Mobile nav -->
-     <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav" id="mobile-nav">
       <button class="mobile-nav__close-btn" id="close-btn">Cerrar</button>
       <img
-          class="mobile-nav__logo"
-          src="./img/donfranksinfondo.png"
-          alt="Don Frank logo"
-          width="503"
-          height="496"
-        />
-        <ul class="mobile-nav__list">
-          <li class="mobile-nav__list-item"><a href="#">Inicio</a></li>
-          <li class="mobile-nav__list-item"><a href="#">Nosotros</a></li>
-          <li class="mobile-nav__list-item"><a href="#">Ayudemos</a></li>
-          <li class="mobile-nav__list-item"><a href="#">Contacto</a></li>
-        </ul>
-        <div class="mobile-nav__separator"></div>
-        <a href="" class="mobile-nav__comprar-btn"
-          >Comprar
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="mobile-nav__comprar-btn__bolsa"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-            />
-          </svg>
-        </a>
-     </div>
-     <script src="./source/main.js" type="module"></script>
+        class="mobile-nav__logo"
+        src="./img/donfranksinfondo_recortado_solo.png"
+        alt="Don Frank logo"
+        width="160"
+        height="112"
+      />
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__list-item"><a href="#">Inicio</a></li>
+        <li class="mobile-nav__list-item"><a href="#">Nosotros</a></li>
+        <li class="mobile-nav__list-item"><a href="#">Ayudemos</a></li>
+        <li class="mobile-nav__list-item"><a href="#">Contacto</a></li>
+      </ul>
+      <div class="mobile-nav__separator"></div>
+      <a href="" class="mobile-nav__comprar-btn"
+        >Comprar
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mobile-nav__comprar-btn__bolsa"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+          />
+        </svg>
+      </a>
+    </div>
+    <section class="hero container">
+      <div class="hero__container">
+        <h1 class="hero__title">
+          
+          Café que <span class="hero__title-span">cambia vidas</span>
+        </h1>
+        <p class="hero__description">Desde las montañas de Chiapas hasta tu taza, nuestro café nace con propósito. Cada sorbo ayuda a cambiar la vida de perros rescatados y comunidades locales.</p>
+        <div class="hero__buttons">
+          <a href="" class="hero__nosotros-btn btn">Nuestra misión</a>
+          <a href="" class="hero__comprar-cafe">Comprar café</a>
+        </div>
+      </div>
+    </section>
+    <script src="./source/main.js" type="module"></script>
   </body>
 </html>

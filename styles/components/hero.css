@@ -1,0 +1,154 @@
+.hero {
+  min-height: 25vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../../img/donponkis.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  font-size: clamp(2.4rem, 4vw, 5rem);
+  text-align: center;
+  color: var(--title-h1-color);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+.hero__description {
+  /* font-size: var(--size-xs); */
+  font-size: clamp(var(--size-xs), 2vw, var(--size-xl));
+  opacity: 0.9;
+  margin-top: 12px;
+  text-align: center;
+  color: var(--color-hero-text);
+  max-width: 45ch;
+  margin-inline: auto;
+}
+
+/* .hero__br {
+    display: none;
+} */
+
+.hero__buttons {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.hero__nosotros-btn {
+  font-size: clamp(var(--size-sm), 2vw, var(--size-xl));
+}
+
+.hero__comprar-cafe {
+  text-decoration: none;
+  color: var(--hero-link-color);
+  font-size: clamp(var(--size-sm), 2vw, var(--size-xl));
+  font-weight: 500;
+}
+
+.hero__title-span {
+  color: var(--hero-highlight-color);
+  font-weight: 500;
+}
+
+.hero__container {
+  padding-top: 3rem;
+}
+/*XS*/
+@media (min-width: 475px) {
+  .hero__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero__description {
+    max-width: 45ch;
+    margin-inline: auto;
+  }
+}
+
+/*SM*/
+@media (min-width: 640px) {
+  .hero__description {
+    /* font-size: var(--size-lg); */
+    max-width: 45ch;
+    margin-inline: auto;
+  }
+}
+
+/*MD*/
+@media (min-width: 768px) {
+  .hero {
+    min-height: 35vh;
+  }
+
+  .hero__buttons {
+    margin-top: 2rem;
+  }
+
+  .hero__comprar-cafe {
+    position: relative;
+  }
+
+  .hero__nosotros-btn {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero__description {
+    margin-top: 1rem;
+    max-width: 50ch;
+    margin-inline: auto;
+  }
+
+  .hero__nosotros-btn:hover {
+    background-color: var(--accent-green);
+  }
+
+  .hero__comprar-cafe::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero__comprar-cafe:hover::after {
+    width: 100%;
+  }
+}
+
+/*LG*/
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 45vh;
+  }
+
+  .hero__title {
+    margin-top: 2rem;
+  }
+
+
+}
+
+/*XL*/
+@media (min-width: 1280px) {
+  .hero {
+    min-height: 55vh;
+  }
+
+  .hero__title {
+    margin-top: 3rem;
+  }
+}
+
+/*2XL*/
+/* @media (min-width: 1536px) {
+   
+} */
