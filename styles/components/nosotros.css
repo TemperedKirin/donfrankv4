@@ -1,0 +1,140 @@
+.nosotros__container {
+  text-align: center;
+}
+
+.nosotros__leaf {
+  color: var(--icon-origin);
+}
+
+.nosotros__paw {
+  color: var(--icon-paw);
+}
+
+.nosotros__coffee {
+  color: var(--icon-coffee);
+}
+
+.nosotros__mountain {
+  color: var(--icon-mountain);
+}
+
+.nosotros__title {
+  font-size: clamp(var(--size-3xl), 2vw, var(--size-6xl));
+  color: var(--title-h2-color);
+}
+
+.nosotros__title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin: 1rem auto 0;
+  background-color: var(--accent-green);
+  border-radius: 2px;
+}
+
+.nosotros__card-title {
+  font-size: clamp(var(--size-xs), 2vw, var(--size-2xl));
+  color: var(--title-h3-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.nosotros__description {
+  font-size: clamp(var(--size-xs), 2vw, var(--size-xl));
+  margin-top: 1rem;
+  color: var(--color-text);
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+.nosotros__card {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  margin-top: 1rem;
+  box-shadow: var(--card-shadow);
+}
+
+.nosotros__title-container {
+  margin-bottom: 1rem;
+}
+.nosotros__card-description {
+  font-size: clamp(var(--size-xs), 3vw, var(--size-xl));
+}
+
+.nosotros__card-icon {
+  font-size: var(--icon-size);
+}
+
+/*XS*/
+/* @media (min-width: 475px) { 
+    
+} */
+
+/*SM*/
+@media (min-width: 640px) {
+  .nosotros__card-container {
+    display: grid;
+    grid-template-areas:
+      "cal cal"
+      "det ori"
+      "paw paw";
+    grid-template-columns: 1fr 1fr;
+    gap: 0 0.5rem;
+  }
+
+  .nosotros__card--cal {
+    grid-area: cal;
+  }
+
+  .nosotros__card--det {
+    grid-area: det;
+  }
+
+  .nosotros__card--orig {
+    grid-area: ori;
+  }
+
+  .nosotros__card--paw {
+    grid-area: paw;
+  }
+
+  .nosotros__card {
+    padding: 0.4rem 0.8rem;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .nosotros__card:hover {
+    transform: scale(1.02);
+    box-shadow: var(--card-shadow-hover);
+  }
+}
+
+/*MD*/
+/* @media (min-width: 768px) {
+  
+} */
+
+/*LG*/
+@media (min-width: 1024px) {
+  .nosotros__card-container {
+    margin-top: 3rem;
+  }
+  .nosotros__card {
+    padding: 1.2rem 0;
+  }
+}
+
+/*XL*/
+/* @media (min-width: 1280px) {
+   
+} */
+
+/*2XL*/
+/* @media (min-width: 1536px) {
+   
+} */

@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.section {
+  margin-top: 5rem;
+}
+
 /*XS*/
 @media (min-width: 475px) {
     .container {
@@ -64,3 +68,33 @@
         max-width: 1536px;
     }
 }
+
+/*XS*/
+/* @media (min-width: 475px) { 
+    
+} */
+
+/*SM*/
+/* @media (min-width: 640px) {    
+    
+} */
+
+/*MD*/
+/* @media (min-width: 768px) {
+  
+} */
+
+/*LG*/
+/* @media (min-width: 1024px) {
+
+} */
+
+/*XL*/
+/* @media (min-width: 1280px) {
+   
+} */
+
+/*2XL*/
+/* @media (min-width: 1536px) {
+   
+} */

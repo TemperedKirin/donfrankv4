@@ -38,7 +38,6 @@
   --color-text: #6b7280; /* Texto principal */
   --color-text-muted: #9ca3af; /* Texto secundario */
   --color-text-inverse: #ffffff; /* Texto sobre fondos oscuros */
-  
 
   /* =========================
      Navbar
@@ -75,11 +74,26 @@
   /* =========================
      Cards
      ========================= */
-  --card-background: #ffffff;
+  --card-background: #f7f3ee;
   --card-border: #e5e7eb;
   --card-title: #1f2937;
   --card-text: #6b7280;
-  --card-shadow: rgba(17, 24, 39, 0.06);
+  --card-shadow: 0 8px 24px rgba(74, 56, 41, 0.10);
+  --card-shadow-hover: 0 12px 32px rgba(74, 56, 41, 0.14);
+
+
+
+  /* =========================
+     Icons
+     ========================= */
+  --icon-coffee: #5a3e2b;
+  --icon-paw: #3f6f8a;
+  --icon-origin: #6f7f4f;
+  --icon-mountain: #3F5C6B;
+  --icon-size: clamp(1.8rem, 5vw, 2.8rem);
+
+
+
 
   /* =========================
      Badges / Pills
