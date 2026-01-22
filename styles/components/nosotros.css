@@ -19,7 +19,7 @@
 }
 
 .nosotros__title {
-  font-size: clamp(var(--size-3xl), 2vw, var(--size-6xl));
+  font-size: clamp(var(--size-3xl), 4vw, var(--size-6xl));
   color: var(--title-h2-color);
 }
 
@@ -29,7 +29,7 @@
   width: 64px;
   height: 3px;
   margin: 1rem auto 0;
-  background-color: var(--accent-green);
+  background-color: var(--section-divider);
   border-radius: 2px;
 }
 
@@ -54,6 +54,7 @@
   border: 1px solid var(--card-border);
   border-radius: 6px;
   margin-top: 1rem;
+  padding: 1rem;
   box-shadow: var(--card-shadow);
 }
 
@@ -67,6 +68,8 @@
 .nosotros__card-icon {
   font-size: var(--icon-size);
 }
+
+
 
 /*XS*/
 /* @media (min-width: 475px) { 
