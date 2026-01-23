@@ -42,12 +42,21 @@
   /* =========================
      Navbar
      ========================= */
-  --navbar-background: #ffffffcc; /* Blanco translúcido */
+  --navbar-background: #ffffff; /* Blanco translúcido */
   --navbar-border: #e5e7eb;
   --navbar-text: #1f2937;
   --navbar-hover: #4f5d8c; /* Azul suave */
   --navbar-active: #2c3550;
   --navbar-mobile-background: #eef3f0;
+  --navbar-scroll-bg: #2f3e5c;
+  --navbar-scroll-text: #ffffff;
+  --navbar-title: #f2ede6;
+  --navbar-scroll-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --navbar-link: #d6dbe5;
+  --navbar-link-hover: #a9b6d9; /* azul claro elegante */
+
+
+
 
   /* =========================
      Hero
@@ -78,10 +87,8 @@
   --card-border: #e5e7eb;
   --card-title: #1f2937;
   --card-text: #6b7280;
-  --card-shadow: 0 8px 24px rgba(74, 56, 41, 0.10);
+  --card-shadow: 0 8px 24px rgba(74, 56, 41, 0.1);
   --card-shadow-hover: 0 12px 32px rgba(74, 56, 41, 0.14);
-
-
 
   /* =========================
      Icons
@@ -89,11 +96,8 @@
   --icon-coffee: #5a3e2b;
   --icon-paw: #3f6f8a;
   --icon-origin: #6f7f4f;
-  --icon-mountain: #3F5C6B;
+  --icon-mountain: #3f5c6b;
   --icon-size: clamp(1.8rem, 5vw, 2.8rem);
-
-
-
 
   /* =========================
      Badges / Pills
@@ -108,7 +112,6 @@
   --accent-green: #5f7c6a; /* Verde natural del bloque Don Frank */
   --accent-cream: #f5f3ef;
   --section-divider: #b08a5a;
-
 
   /* =========================
      Estados y UI
