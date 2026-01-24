@@ -1,0 +1,145 @@
+.coffee {
+  padding: clamp(4rem, 8vw, 8rem) 1.5rem;
+  background-color: var(--background-color);
+}
+
+.coffee__header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.coffee__title {
+  font-size: clamp(var(--size-4xl), 4vw, var(--size-6xl));
+  margin-bottom: 1rem;
+  color: var(--title-h2-color);
+  text-align: center;
+  
+}
+
+.coffee__title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin: 1rem auto 0;
+  background-color: var(--section-divider);
+  border-radius: 2px;
+}
+
+.coffee__description {
+    color: var(--color-text);
+    font-size: clamp(var(--size-xs), 2vw, var(--size-xl));
+
+}
+
+.coffee-card__img {
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+    padding: 2rem;
+    background-color: #f7f4ef;
+    border-radius: 4px;
+}
+
+.coffee-card {
+    background-color: var(--card-background);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coffee-card__content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+.coffee-card__title {
+    font-size: 1.4rem;
+    color: var(--title-h3-color);
+}
+
+.coffee-card__description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.coffee-card__impact {
+    margin-top: auto;
+    font-size: 0.85rem;
+    color: var(--accent-green);
+    font-style: italic;
+}
+
+.coffee-card__cta {
+    margin-top: 0;
+    align-self: flex-end;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    position: relative;
+}
+
+.coffee-card__cta::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.coffee-card__cta:hover::after {
+    transform: scaleX(1);
+}
+.coffee__grid {
+    display: grid;
+    gap: 2rem;
+}
+
+
+/*XS*/
+/* @media (min-width: 475px) { 
+    
+} */
+
+/*SM*/
+@media (min-width: 640px) {    
+    .coffee__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*MD*/
+/* @media (min-width: 768px) {
+  
+} */
+
+/*LG*/
+@media (min-width: 1024px) {
+    .coffee__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*XL*/
+/* @media (min-width: 1280px) {
+   
+} */
+
+/*2XL*/
+/* @media (min-width: 1536px) {
+   
+} */
