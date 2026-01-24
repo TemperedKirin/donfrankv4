@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/components/hero.css" />
     <link rel="stylesheet" href="./styles/components/nosotros.css" />
     <link rel="stylesheet" href="./styles/components/historia.css" />
+    <link rel="stylesheet" href="./styles/components/cafe-card.css">
     <link rel="stylesheet" href="./styles/components/footer.css" />
     <link
       rel="stylesheet"
@@ -110,6 +111,7 @@
         </svg>
       </a>
     </div>
+    <!-- Hero -->
     <section class="hero container">
       <div class="hero__container">
         <h1 class="hero__title">
@@ -127,7 +129,7 @@
     </section>
     <section class="historia container section">
       <h2 class="historia__title">¿Cómo inició Don Frank?</h2>
-      
+
       <article class="historia__item">
         <div class="historia_img">
           <img
@@ -225,7 +227,15 @@
         </div>
       </article>
       <article class="historia__item">
-        <div class="historia__img"></div>
+        <div class="historia__img">
+          <img
+            src="./img/donponkis-solo-no-bg.png"
+            alt="Don Frank"
+            class="historia__item__img"
+            width="1024"
+            height="683"
+          />
+        </div>
         <div class="historia__content">
           <h3 class="historia__content__title">Café con propósito</h3>
           <p class="historia__content__description">
@@ -235,8 +245,8 @@
           </p>
         </div>
       </article>
-      
     </section>
+    <!-- Nosotros -->
     <section class="nosotros container section">
       <div class="nosotros__container">
         <div class="nosotros__title-container">
@@ -293,22 +303,150 @@
         </div>
       </div>
     </section>
+    <!-- Café -->
+    <section class="coffee container section">
+      <div class="coffee__header">
+        <h2 class="coffee__title">Nuestros Cafés</h2>
+        <p class="coffee__description">
+          Cuatro variedades de café de Chiapas, creadas con cuidado artesanal y
+          un propósito que va más allá de una taza.
+        </p>
+      </div>
+      <div class="coffee__grid">
+        <!-- Card -->
+        <article class="coffee-card">
+          <img
+            src="./img/chocolateamargo.png"
+            alt="Chocolate Amargo"
+            class="coffee-card__img"
+            width="864"
+            height="1184"
+          />
+          <div class="coffee-card__content">
+            <h3 class="coffee-card__title">Chocolate Amargo</h3>
+            <p class="coffee-card__description">
+              Un café intenso y profundo, con notas marcadas de cacao oscuro y
+              un final largo y elegante. Ideal para quienes disfrutan sabores
+              fuertes, balanceados y una taza que se siente desde el primer
+              sorbo.
+            </p>
+            <span class="coffee-card__impact">
+              Parte de esta compra apoya a Fundadog.
+            </span>
+            <a href="#" class="coffee-card__cta">Ver detalles</a>
+          </div>
+        </article>
+        <article class="coffee-card">
+          <img
+            src="./img/mielymadera.png"
+            alt="Miel madera y maple"
+            class="coffee-card__img"
+            width="864"
+            height="1184"
+          />
+          <div class="coffee-card__content">
+            <h3 class="coffee-card__title">Miel, madera y maple</h3>
+            <p class="coffee-card__description">
+              Suave y reconfortante, con notas dulces de miel y maple que se
+              mezclan con un toque cálido a madera. Un café envolvente, perfecto
+              para las mañanas tranquilas o para acompañar una tarde sin prisas.
+            </p>
+            <span class="coffee-card__impact">
+              Parte de esta compra apoya a Fundadog.
+            </span>
+            <a href="#" class="coffee-card__cta">Ver detalles</a>
+          </div>
+        </article>
+        <article class="coffee-card">
+          <img
+            src="./img/chocolateyvainilla.png"
+            alt="Chocolate y vainilla"
+            class="coffee-card__img"
+            width="864"
+            height="1184"
+          />
+          <div class="coffee-card__content">
+            <h3 class="coffee-card__title">Chocolate y vainilla</h3>
+            <p class="coffee-card__description">
+              Equilibrado y aromático, con la profundidad del chocolate y la
+              suavidad natural de la vainilla. Un perfil amable y redondo,
+              pensado para quienes buscan una taza fácil de disfrutar, todos los
+              días.
+            </p>
+            <span class="coffee-card__impact">
+              Parte de esta compra apoya a Fundadog.
+            </span>
+            <a href="#" class="coffee-card__cta">Ver detalles</a>
+          </div>
+        </article>
+        <article class="coffee-card">
+          <img
+            src="./img/chocolateavellana.png"
+            alt="Chocolate avellana"
+            class="coffee-card__img"
+            width="864"
+            height="1184"
+          />
+          <div class="coffee-card__content">
+            <h3 class="coffee-card__title">Chocolate Avellana</h3>
+            <p class="coffee-card__description">
+              Cálido y cremoso, con notas de chocolate y avellana tostada que
+              aportan cuerpo y dulzor natural. Un café reconfortante, ideal para
+              acompañar momentos de calma y disfrutar lentamente.
+            </p>
+            <span class="coffee-card__impact">
+              Parte de esta compra apoya a Fundadog.
+            </span>
+            <a href="#" class="coffee-card__cta">Ver detalles</a>
+          </div>
+        </article>
+      </div>
+    </section>
     <div style="height: 100vh"></div>
     <footer class="footer">
       <ul class="footer__social-icon">
-        <li class="footer__social-icon__list"><a href="#" class="footer__social-icon__list-icon"><i class="fa-brands fa-facebook"></i></a></li>
-        <li class="footer__social-icon__list"><a href="#" class="footer__social-icon__list-icon"><i class="fa-brands fa-instagram"></i></a></li>
-        <li class="footer__social-icon__list"><a href="#" class="footer__social-icon__list-icon"><i class="fa-brands fa-whatsapp"></i></a></li>
-        <li class="footer__social-icon__list"><a href="#" class="footer__social-icon__list-icon"><i class="fa-regular fa-envelope"></i></a></li>
+        <li class="footer__social-icon__list">
+          <a href="#" class="footer__social-icon__list-icon"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li class="footer__social-icon__list">
+          <a href="#" class="footer__social-icon__list-icon"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li class="footer__social-icon__list">
+          <a href="#" class="footer__social-icon__list-icon"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </li>
+        <li class="footer__social-icon__list">
+          <a href="#" class="footer__social-icon__list-icon"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+        </li>
       </ul>
       <ul class="footer__menu">
-        <li class="footer__menu-element"><a href="#" class="footer__menu-icon">Inicio</a></li>
-        <li class="footer__menu-element"><a href="#" class="footer__menu-icon">Nosotros</a></li>
-        <li class="footer__menu-element"><a href="#" class="footer__menu-icon">Ayudemos</a></li>
-        <li class="footer__menu-element"><a href="#" class="footer__menu-icon">Contacto</a></li>
-        <li class="footer__menu-element"><a href="#" class="footer__menu-icon">Comprar</a></li>
+        <li class="footer__menu-element">
+          <a href="#" class="footer__menu-icon">Inicio</a>
+        </li>
+        <li class="footer__menu-element">
+          <a href="#" class="footer__menu-icon">Nosotros</a>
+        </li>
+        <li class="footer__menu-element">
+          <a href="#" class="footer__menu-icon">Ayudemos</a>
+        </li>
+        <li class="footer__menu-element">
+          <a href="#" class="footer__menu-icon">Contacto</a>
+        </li>
+        <li class="footer__menu-element">
+          <a href="#" class="footer__menu-icon">Comprar</a>
+        </li>
       </ul>
-      <p class="footer__content"><span id="current-year"></span> | Don Frank Café. Todos los derechos reservados</p>
+      <p class="footer__content">
+        <span id="current-year"></span> | Don Frank Café. Todos los derechos
+        reservados
+      </p>
     </footer>
     <script src="./source/main.js" type="module"></script>
   </body>
