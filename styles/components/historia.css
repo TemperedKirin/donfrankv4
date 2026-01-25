@@ -11,6 +11,7 @@
   
   font-size: clamp(var(--size-2xl), 4vw, var(--size-4xl));
   color: var(--title-h2-color);
+  font-family: var(--font-primary);
 }
 
 .historia__title::after {
@@ -76,6 +77,11 @@
 
   .historia__item:nth-child(even) * {
     direction: ltr;
+  }
+
+  .historia__item__img {
+    height: auto;
+    object-fit: cover;
   }
 }
 

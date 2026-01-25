@@ -15,12 +15,28 @@
     text-decoration: none;
     transition: background-color 0.3s;
     cursor: pointer;
+    font-family: var(--font-text);
 }
 
 .section {
   margin-top: 5rem;
 }
 
+h1 {
+    font-family: var(--font-primary);
+}
+
+h2, h3 {
+    font-family: var(--font-secondary);
+}
+
+p, a {
+    font-family: var(--font-text);
+}
+
+span {
+    font-family: var(--font-secondary);
+}
 /*XS*/
 @media (min-width: 475px) {
     .container {

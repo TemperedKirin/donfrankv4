@@ -38,6 +38,10 @@
   --color-text: #6b7280; /* Texto principal */
   --color-text-muted: #9ca3af; /* Texto secundario */
   --color-text-inverse: #ffffff; /* Texto sobre fondos oscuros */
+  --text-body: #3f4a56;
+  --text-impact: #4e5f3c;
+  --cta-link: #4a6fa5;
+  --cta-link-hover: #2f4f7f;
 
   /* =========================
      Navbar
@@ -54,9 +58,6 @@
   --navbar-scroll-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   --navbar-link: #d6dbe5;
   --navbar-link-hover: #a9b6d9; /* azul claro elegante */
-
-
-
 
   /* =========================
      Hero
