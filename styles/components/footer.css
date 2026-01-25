@@ -71,3 +71,40 @@
     font-size: 14px;
 
 }
+
+.footer__title {
+    color: var(--accent-green);
+    font-size: clamp(var(--size-lg), 2vw, var(--size-2xl));
+    margin-bottom: 1.5rem;
+    
+}
+
+/*XS*/
+/* @media (min-width: 475px) { 
+    
+} */
+
+/*SM*/
+/* @media (min-width: 640px) {    
+    
+} */
+
+/*MD*/
+/* @media (min-width: 768px) {
+  
+} */
+
+/*LG*/
+/* @media (min-width: 1024px) {
+
+} */
+
+/*XL*/
+/* @media (min-width: 1280px) {
+   
+} */
+
+/*2XL*/
+/* @media (min-width: 1536px) {
+   
+} */

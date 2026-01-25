@@ -30,6 +30,7 @@
 .coffee__description {
     color: var(--color-text);
     font-size: clamp(var(--size-xs), 2vw, var(--size-xl));
+    
 
 }
 
@@ -69,13 +70,14 @@
 .coffee-card__description {
     font-size: 0.95rem;
     line-height: 1.6;
-    color: var(--color-text);
+    color: var(--text-body);
+    letter-spacing: 1.1px;
 }
 
 .coffee-card__impact {
     margin-top: auto;
     font-size: 0.85rem;
-    color: var(--accent-green);
+    color: var(--text-impact);
     font-style: italic;
 }
 
@@ -83,7 +85,7 @@
     margin-top: 0;
     align-self: flex-end;
     font-weight: 600;
-    color: var(--color-text-muted);
+    color: var(--cta-link);
     text-decoration: none;
     position: relative;
 }

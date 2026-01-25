@@ -1,0 +1,107 @@
+.ayudemos__title {
+  font-size: clamp(var(--size-2xl), 4vw, var(--size-4xl));
+  color: var(--title-h2-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.ayudemos__title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin: 1rem auto 0;
+  background-color: var(--section-divider);
+  border-radius: 2px;
+}
+
+.ayudemos__img {
+    width: 100%;
+    max-height: 30vh;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+.ayudemos__description {
+    margin-top: 1.5rem;
+    letter-spacing: 1.2px;
+    padding: 1rem;
+    text-align: center;
+    font-size: clamp(var(--size-xs), 2vw, var(--size-xl));
+}
+
+.ayudemos__description2 {
+    
+    letter-spacing: 1.2px;
+    padding: 1rem;
+    text-align: center;
+    font-size: clamp(var(--size-xx), 2vw, var(--size-lg));
+}
+
+.ayudemos__description-span {
+    color: var(--accent-blue);
+}
+
+.ayudemos__fundadog-social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ayudemos__fundadog-social__list-item {
+  list-style-type: none;
+}
+
+.ayudemos__fundadog-social__social-icon {
+  text-decoration: none;
+  color: var(--accent-blue);
+}
+
+.ayudemos__fundadog-social__social-icon i {
+  font-size: clamp(var(--size-xl), 3vw, var(--size-3xl));
+  display: inline-block; /* Necesario para que las transformaciones se apliquen correctamente */
+  transition: transform 0.2s ease-in-out;
+}
+
+.ayudemos__fundadog-social__social-icon:hover i {
+  transform: scale(1.15);
+}
+
+/*XS*/
+/* @media (min-width: 475px) { 
+    
+} */
+
+/*SM*/
+/* @media (min-width: 640px) {    
+    
+} */
+
+/*MD*/
+@media (min-width: 768px) {
+  .ayudemos__img {
+  max-height: 40vh;
+  }
+}
+
+/*LG*/
+@media (min-width: 1024px) {
+.ayudemos__img {
+  max-height: 45vh;
+  }
+}
+
+/*XL*/
+@media (min-width: 1280px) {
+   .ayudemos__img {
+  max-height: 50vh;
+  }
+}
+
+/*2XL*/
+@media (min-width: 1536px) {
+   .ayudemos__img {
+  max-height: 55vh;
+  }
+}
